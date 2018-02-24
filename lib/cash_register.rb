@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :item, :price, :quantity, :last_transaction_value
   
-  @@items = []
+  @items = []
   
   def initialize(discount = 0)
     @total = 0  #instance of cashregister starts at 0 
@@ -28,12 +28,10 @@ class CashRegister
   end 
 
   def items
-    #how to loop through? 
-      binding.pry
       @item = self.item 
       @quantity = self.quantity 
       
-      @@items += [self.item] * quantity 
+      @items += [self.item] * quantity 
   end 
   
   def void_last_transaction
