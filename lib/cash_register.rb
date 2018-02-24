@@ -17,8 +17,6 @@ class CashRegister
       @items << item 
       counter += 1 
     end
-    @item = item
-    @quantity = quantity 
     @last_transaction_value = price 
     self.total += (price * quantity) #total of instance
   end 
