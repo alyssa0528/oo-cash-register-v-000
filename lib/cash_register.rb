@@ -29,6 +29,7 @@ class CashRegister
 
   def items
     #how to loop through? 
+      binding.pry
       self.split(",")
       @item = self.item 
       @quantity = self.quantity 
