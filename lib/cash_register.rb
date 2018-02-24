@@ -28,7 +28,7 @@ class CashRegister
   end 
 
   def items
-    
+    binding.pry
     self.add_item.each do |item, price, quantity|
       @item = self.item 
       @quantity = self.quantity 
