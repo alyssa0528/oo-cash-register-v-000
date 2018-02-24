@@ -29,6 +29,8 @@ class CashRegister
 
   def items
     #how to loop through? 
+      binding.pry
+      self
       @item = self.item 
       @quantity = self.quantity 
       
