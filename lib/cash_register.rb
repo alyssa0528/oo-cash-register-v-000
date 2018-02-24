@@ -28,7 +28,6 @@ class CashRegister
   end 
 
   def items
-    binding.pry
       @item = self.item 
       @quantity = self.quantity 
       @@items += [self.item] * quantity 
