@@ -14,6 +14,7 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @item = item
     @quantity = quantity 
+    @last_transaction_value = self.price 
     self.total += (price * quantity) #total of instance
   end 
   
@@ -29,7 +30,6 @@ class CashRegister
   def items
     @item = self.item 
     @quantity = self.quantity 
-    @last_transaction_value = self.price 
     
     @@items += [self.item] * quantity 
   end 
