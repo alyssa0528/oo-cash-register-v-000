@@ -12,6 +12,11 @@ class CashRegister
   
   # the reader method for total (created by attr_accessor above) satisfies the "returns the current total" test 
   def add_item(item, price, quantity = 1)
+    counter = 1 
+    while counter < quantity do 
+      @items << item 
+      counter += 1 
+    end
     @item = item
     @quantity = quantity 
     @last_transaction_value = price 
