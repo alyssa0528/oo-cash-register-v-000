@@ -32,8 +32,7 @@ class CashRegister
       @item = self.item 
       @quantity = self.quantity 
       
-      @@items << self.item
-      #+= [self.item] * quantity 
+      @@items += [self.item] * quantity 
   end 
   
   def void_last_transaction
