@@ -29,7 +29,7 @@ class CashRegister
 
   def items
     
-    self.add.item.each do |item, price, quantity|
+    self.add_item.each do |item, price, quantity|
       @item = self.item 
       @quantity = self.quantity 
     end 
