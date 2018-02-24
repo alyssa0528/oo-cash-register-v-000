@@ -33,10 +33,7 @@ class CashRegister
   end 
 
   def items
-      @item = self.item 
-      @quantity = self.quantity 
-      
-      @items += [self.item] * quantity 
+      @items
   end 
   
   def void_last_transaction
