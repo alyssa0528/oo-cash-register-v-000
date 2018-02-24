@@ -28,6 +28,7 @@ class CashRegister
   end 
 
   def items
+    #how to loop through? 
       @item = self.item 
       @quantity = self.quantity 
       @@items += [self.item] * quantity 
