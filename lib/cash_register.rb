@@ -3,7 +3,7 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :item, :price, :quantity, :last_transaction_value
   
-  @items = []
+  #@items = []
   
   def initialize(discount = 0)
     @total = 0  #instance of cashregister starts at 0 
