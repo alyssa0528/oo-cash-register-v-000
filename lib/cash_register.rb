@@ -32,8 +32,9 @@ class CashRegister
     self.add_item.each do |item, price, quantity|
       @item = self.item 
       @quantity = self.quantity 
-    end 
       @@items += [self.item] * quantity 
+    end 
+      
   end 
   
   def void_last_transaction
