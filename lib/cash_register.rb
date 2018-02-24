@@ -1,7 +1,7 @@
 require 'pry'
 
 class CashRegister
-  attr_accessor :total, :discount, :item, :price, :quantity, :last_transaction
+  attr_accessor :total, :discount, :item, :price, :quantity, :last_transaction_value
   
   @@items = []
   
@@ -29,12 +29,13 @@ class CashRegister
   def items
     @item = self.item 
     @quantity = self.quantity 
-    @last_transaction = self.last_transaction 
+    @last_transaction_value = self.price 
     
     @@items += [self.item] * quantity 
   end 
   
   def void_last_transaction
+    @total - @last_transaction_value
   end 
   
 end 
