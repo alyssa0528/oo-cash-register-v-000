@@ -28,9 +28,11 @@ class CashRegister
   end 
 
   def items
-    @item = self.item 
-    @quantity = self.quantity 
     
+    add.item.each do |item, price, quantity|
+      @item = self.item 
+      @quantity = self.quantity 
+    end 
     @@items += [self.item] * quantity 
   end 
   
