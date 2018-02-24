@@ -8,6 +8,7 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0  #instance of cashregister starts at 0 
     @discount = discount
+    @items = []
   end 
   
   # the reader method for total (created by attr_accessor above) satisfies the "returns the current total" test 
