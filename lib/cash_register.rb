@@ -3,8 +3,6 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :discount, :item, :price, :quantity, :last_transaction_value
   
-  #@items = []
-  
   def initialize(discount = 0)
     @total = 0  #instance of cashregister starts at 0 
     @discount = discount
@@ -14,7 +12,7 @@ class CashRegister
   # the reader method for total (created by attr_accessor above) satisfies the "returns the current total" test 
   def add_item(item, price, quantity = 1)
     counter = 1 
-    while counter < quantity do 
+    while counter <= quantity do 
       @items << item 
       counter += 1 
     end
